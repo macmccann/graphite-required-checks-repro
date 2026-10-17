@@ -1,17 +1,22 @@
-name: Minimal CI
+name: Minimal gated checks
 on:
   pull_request:
-permissions:
-  contents: read
+permissions: {}
 concurrency:
   group: minimal-ci-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 30
   frontend-checks:
+    needs: prepare
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 30
-  backend-worker:
+      - run: echo passed
+  backend-checks:
+    needs: prepare
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 30
+      - run: echo passed

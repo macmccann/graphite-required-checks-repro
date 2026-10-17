@@ -1,0 +1,9 @@
+name: Unrelated CI
+on:
+  pull_request:
+permissions: {}
+jobs:
+  unrelated-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 5
