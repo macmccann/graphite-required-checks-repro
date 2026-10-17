@@ -1,0 +1,79 @@
+# ci-aggregate-checks: v1
+# ci-revision-step: v1
+name: Repro Tests
+on:
+  pull_request:
+  merge_group:
+permissions:
+  contents: read
+concurrency:
+  group: repro-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  ci-revision:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions: {}
+    timeout-minutes: 1
+    steps:
+      - name: >-
+          ${{ format('CI revision [ci-revision-v1:{0}:{1}:{2}:{3}:{4}]',
+              github.event.pull_request.number, github.event.pull_request.head.sha,
+              github.event.pull_request.base.repo.id, github.event.pull_request.base.ref,
+              github.event.pull_request.base.sha) }}
+        run: ':'
+  detect-changes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: sleep 60
+  build:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: sleep 30
+  pytest:
+    name: pytest (shard-${{ matrix.shard }})
+    needs: build
+    strategy:
+      matrix:
+        shard: [1, 2, 3]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: sleep 90
+  services-pytest:
+    name: services-pytest (${{ matrix.shard }})
+    needs: build
+    strategy:
+      matrix:
+        shard: [1]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: sleep 90
+  select-browser-tests:
+    name: Select Momentic tests
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: ':'
+  core-tests:
+    name: core-tests (shard-${{ matrix.shard }})
+    needs: select-browser-tests
+    strategy:
+      matrix:
+        shard: [1, 2]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: sleep 90
+  merge-browser-results:
+    name: Merge and triage Momentic results
+    needs: core-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: ':'
