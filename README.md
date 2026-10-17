@@ -75,6 +75,10 @@ The verified effect is a misleading list of pending checks. This experiment does
 
 A likely fix should replace synthetic entries using a stable context/app identity, reset them when the PR head changes, and retire them when the corresponding real result arrives. These are proposed invariants, not a verified patch.
 
+## Slow reporter experiment
+
+The repository now includes approximately four-minute synthetic CI and the Nuvo status reporter logic, with only workflow names and a path adapted. See [setup, controls, and results](controls/slow-reporter.md). This experiment is intended to isolate the reporter; its outcome is recorded separately from the earlier controls below.
+
 ## Standalone controls and limits
 
 The personal repository is public because GitHub Free does not support required-check rules on private repositories. It contains no Nuvo application source or credentials. Graphite was connected only to this new personal repository.

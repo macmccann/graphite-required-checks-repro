@@ -1,24 +1,38 @@
-name: Report backend status
+name: Report CI aggregate status
+
 on:
   workflow_run:
-    workflows: [Minimal CI]
+    workflows: [Repro CI, Repro Tests]
+    # requested is not emitted for reruns; in_progress is.
     types: [requested, in_progress, completed]
+
 permissions:
+  contents: read
+  actions: read
+  pull-requests: read
   statuses: write
+
 jobs:
-  report:
+  refresh:
+    if: github.event.workflow_run.event == 'pull_request' || github.event.workflow_run.event == 'merge_group'
+    # Producer gate names are disjoint. A pending Tests event must never be
+    # evicted by CI, while events/branches within one producer still share a lock.
+    # Job-level concurrency excludes filtered-out manual/push events entirely.
+    concurrency:
+      group: ci-aggregate-${{ github.event.workflow_run.workflow_id }}-${{ github.event.workflow_run.head_sha }}
+      cancel-in-progress: false
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
+      # workflow_run is privileged. Execute only the trusted default-branch
+      # revision, never the triggering PR's code or its artifacts.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          sparse-checkout: .github/scripts
       - uses: actions/github-script@v7
         with:
           script: |
-            const run = context.payload.workflow_run;
-            await github.rest.repos.createCommitStatus({
-              ...context.repo,
-              sha: run.head_sha,
-              context: 'backend-checks',
-              state: run.status !== 'completed' ? 'pending' :
-                run.conclusion === 'success' ? 'success' : 'failure',
-              target_url: run.html_url,
-              description: 'Minimal backend status reporter',
-            });
+            const { reconcile } = require('./.github/scripts/ci-retry-status.cjs');
+            await reconcile({ github, context, core });

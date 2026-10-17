@@ -1,17 +1,53 @@
-name: Minimal CI
+# ci-aggregate-checks: v1
+# ci-revision-step: v1
+name: Repro CI
 on:
   pull_request:
+  merge_group:
 permissions:
   contents: read
 concurrency:
-  group: minimal-ci-${{ github.ref }}
-  cancel-in-progress: true
+  group: repro-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
+  ci-revision:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions: {}
+    timeout-minutes: 1
+    steps:
+      - name: >-
+          ${{ format('CI revision [ci-revision-v1:{0}:{1}:{2}:{3}:{4}]',
+              github.event.pull_request.number, github.event.pull_request.head.sha,
+              github.event.pull_request.base.repo.id, github.event.pull_request.base.ref,
+              github.event.pull_request.base.sha) }}
+        run: ':'
+  detect-changes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: sleep 90
   frontend-checks:
+    needs: detect-changes
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - run: sleep 30
-  backend-worker:
+      - run: sleep 90
+  backend-typecheck:
+    needs: detect-changes
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - run: sleep 30
+      - run: sleep 120
+  backend-guardrails:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: sleep 90
+  backend-ad-guardrails:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: sleep 105
