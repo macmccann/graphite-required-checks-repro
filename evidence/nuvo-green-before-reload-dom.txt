@@ -1,0 +1,466 @@
+2026-10-17T12:44:34.898Z
+- navigation:
+  - link "Home":
+    - /url: /
+  - link "Skip to main content":
+    - /url: "#content"
+  - separator
+  - link "PR inbox G then I":
+    - /url: /
+    - text: PR inbox
+    - generic: G
+    - generic: then
+    - generic: I
+    - generic: "1"
+  - link "Agents":
+    - /url: /agents
+    - generic: Agents
+  - link "Merge Queue G then M":
+    - /url: /merges
+    - text: Merge Queue
+    - generic: G
+    - generic: then
+    - generic: M
+  - link "Insights G then T":
+    - /url: /insights
+    - text: Insights
+    - generic: G
+    - generic: then
+    - generic: T
+  - link "AI Reviews G then R":
+    - /url: /ai-reviews
+    - text: AI Reviews
+    - generic: G
+    - generic: then
+    - generic: R
+  - separator
+  - button:
+  - button:
+  - separator
+  - button:
+  - button:
+  - link "Settings G then S":
+    - /url: /settings
+    - text: Settings
+    - generic: G
+    - generic: then
+    - generic: S
+  - button "Mac McCann":
+    - generic "Mac McCann":
+      - img "Mac McCann"
+- main:
+  - generic: "#26753"
+  - text: "chore: reproduce required check display on a stacked pull request"
+  - button:
+  - button "Review changes":
+    - generic: Review changes
+  - button "Not ready to merge" [disabled]:
+    - generic: Not ready to merge
+  - separator
+  - button "Open comments sidebar (0 unresolved threads)":
+    - generic: "0"
+  - button "Agent":
+    - generic: Agent
+  - button:
+  - generic: "nuvo #26753"
+  - 'button "chore: reproduce required check display on a stacked pull request"'
+  - generic "Mac McCann":
+    - img "Mac McCann"
+  - generic: Mac McCann
+  - button "codex/graphite-required-checks-repro-top"
+  - generic: →
+  - button "Base branch codex/graphite-required-checks-repro-base, open actions": codex/graphite-required-checks-repro-base
+  - button "1 file +2":
+    - generic: 1 file
+    - generic: "+2"
+  - button "Updated 6m ago":
+    - text: Updated
+    - time: 6m ago
+  - button "Stack" [expanded]:
+    - generic: Stack
+  - text: 2 of 2
+  - button "Copy stack":
+    - generic: Copy stack
+  - button:
+  - 'link "Mac McCann #26753 chore: reproduce required check display on a stacked pull request Needs reviewers 6m"':
+    - /url: /github/pr/nuvo-tech/nuvo/26753/chore-reproduce-required-check-display-on-a-stacked-pull-request
+    - generic "Mac McCann":
+      - img "Mac McCann"
+    - generic: "#26753"
+    - generic: "chore: reproduce required check display on a stacked pull request"
+    - generic "Needs reviewers":
+      - generic: Needs reviewers
+    - time: 6m
+  - 'link "Mac McCann #26752 chore: reproduce required check display on a base pull request Needs reviewers 6m"':
+    - /url: /github/pr/nuvo-tech/nuvo/26752/chore-reproduce-required-check-display-on-a-base-pull-request
+    - generic "Mac McCann":
+      - img "Mac McCann"
+    - generic: "#26752"
+    - generic: "chore: reproduce required check display on a base pull request"
+    - generic "Needs reviewers":
+      - generic: Needs reviewers
+    - time: 6m
+  - generic: dev (trunk)
+  - button "Description" [expanded]:
+    - generic: Description
+  - button "Edit":
+    - generic: Edit
+  - paragraph: Temporary experiment for a Graphite required-check display bug. Do not merge.
+  - paragraph: Graphite displays GitHub's required frontend and backend results for pull requests. This child PR adds only a text marker on top of the experiment base branch. It lets us compare submission and restacking against a direct-to-dev PR under the same repository rules, with no application or CI changes.
+  - paragraph: "Validation: commit hooks passed; live GitHub and Graphite check states are being observed. This PR will remain unmerged."
+  - button "Discussion" [expanded]:
+    - generic: Discussion
+  - button:
+  - generic "Mac McCann":
+    - img "Mac McCann"
+  - text: Add discussion comment
+  - paragraph
+  - article:
+    - generic: open
+    - generic: Merge when ready
+  - article "Needs more reviewers":
+    - heading "Needs more reviewers" [level=2]
+    - generic: Add reviewers if this PR is ready for feedback
+    - button "Add reviewers":
+      - generic: Add reviewers
+  - article:
+    - generic: Review with Graphite
+    - generic "Run AI review":
+      - button "Review":
+        - generic: Review
+  - button "Checks" [expanded]:
+    - generic: Checks
+  - button "Rerun all checks":
+  - button "View all":
+    - generic: View all
+  - generic: No actionable checks
+  - button "Reviewers" [expanded]:
+    - generic: Reviewers
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - generic: No reviewers
+  - button "Labels" [expanded]:
+    - generic: Labels
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - generic: No labels
+  - button "Assignees" [expanded]:
+    - generic: Assignees
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - text: No assignees ·
+  - button "Assign yourself"
+  - button "Hide sidebar":
+  - tablist:
+    - tab "Files" [selected]
+    - tab "Tour"
+  - button "All changes":
+    - generic: All changes
+    - generic: 
+  - button "Diff settings":
+    - generic: Diff settings
+  - separator
+  - textbox "Search files"
+  - button:
+  - tree "File tree":
+    - treeitem ".github/required-checks-repro" [expanded]:
+      - generic: .github/required-checks-repro
+      - treeitem "top.txt" [selected]:
+        - img "Added"
+        - link "top.txt +2":
+          - /url: "#file-.github/required-checks-repro/top.txt"
+          - generic ".github/required-checks-repro/top.txt": top.txt
+          - generic: "+2"
+  - button "Collapse top.txt":
+  - button ".github/required-checks-repro/top.txt":
+    - generic: .github/required-checks-repro/top.txt
+  - generic: "+2"
+  - button "txt"
+  - generic: Created
+  - checkbox "Viewed":
+    - generic: 
+  - checkbox
+  - generic: Viewed
+  - button "Add file comment to top.txt":
+  - button:
+  - generic: "1"
+  - generic: +
+  - generic: Temporary required-check display experiment; do not merge.
+  - generic: "2"
+  - generic: +
+  - generic: Top pull request targets the experiment base branch.
+- separator
+- text:  
+- heading "Checks" [level=2]
+- button "Close sidebar":
+- button "Rerun all checks":
+  - generic: Rerun all jobs
+- link "View logs in GitHub":
+  - /url: https://github.com/nuvo-tech/nuvo/pull/26753#partial-timeline
+  - generic: View logs in GitHub
+- tree "Checks":
+  - treeitem "GitHub Actions Dependabot auto-merge / auto-merge Skipped":
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - generic: Dependabot auto-merge /
+    - text: auto-merge
+    - img "Skipped":
+      - generic: 
+  - treeitem "frontend-checks Pending":
+    - generic: frontend-checks
+    - img "Pending":
+      - generic: 
+  - treeitem "frontend-checks Pending":
+    - generic: frontend-checks
+    - img "Pending":
+      - generic: 
+  - treeitem "frontend-checks Pending":
+    - generic: frontend-checks
+    - img "Pending":
+      - generic: 
+  - treeitem "frontend-checks Pending":
+    - generic: frontend-checks
+    - img "Pending":
+      - generic: 
+  - treeitem "Nuvo CI" [expanded]:
+    - generic: Nuvo CI
+    - treeitem "GitHub Actions backend-ad-guardrails Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: backend-ad-guardrails
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions backend-guardrails Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: backend-guardrails
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions backend-typecheck Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: backend-typecheck
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions dbt-checks Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: dbt-checks
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions edge-router-checks Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: edge-router-checks
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions event-router-checks Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: event-router-checks
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions frontend-validation Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: frontend-validation
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions helm-chart-tests Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: helm-chart-tests
+      - img "Skipped":
+        - generic: 
+    - 'treeitem "GitHub Actions pending-updates-puppeteer / Browser ${{ matrix.section }} Skipped"':
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: "pending-updates-puppeteer / Browser ${{ matrix.section }}"
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions shipsmith-checks Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: shipsmith-checks
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions agent-guidance Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: agent-guidance
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions ci-revision Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: ci-revision
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions codegen-check Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: codegen-check
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions detect-changes Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: detect-changes
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions frontend-checks Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: frontend-checks
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions graphql-compatibility Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: graphql-compatibility
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions pending-updates-puppeteer / Select core browser tests Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: pending-updates-puppeteer / Select core browser tests
+      - img "Succeeded":
+        - generic: 
+  - treeitem "Nuvo Tests" [expanded]:
+    - generic: Nuvo Tests
+    - treeitem "GitHub Actions Build Momentic frontend Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: Build Momentic frontend
+      - img "Skipped":
+        - generic: 
+    - 'treeitem "GitHub Actions core-tests (shard-${{ matrix.shard-index }}) Skipped"':
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: "core-tests (shard-${{ matrix.shard-index }})"
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions Merge and triage Momentic results Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: Merge and triage Momentic results
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions nightly-test-health Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: nightly-test-health
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions Publish trusted test image Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: Publish trusted test image
+      - img "Skipped":
+        - generic: 
+    - 'treeitem "GitHub Actions pytest (shard-${{ matrix.shard-index }}) Skipped"':
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: "pytest (shard-${{ matrix.shard-index }})"
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions pytest-select Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: pytest-select
+      - img "Skipped":
+        - generic: 
+    - 'treeitem "GitHub Actions services-pytest (${{ matrix.service }}) Skipped"':
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: "services-pytest (${{ matrix.service }})"
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions testmon-shadow-summary Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: testmon-shadow-summary
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions Triage Momentic failures Skipped":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: Triage Momentic failures
+      - img "Skipped":
+        - generic: 
+    - treeitem "GitHub Actions build Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: build
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions ci-revision Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: ci-revision
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions detect-changes Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: detect-changes
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions Select Momentic tests Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: Select Momentic tests
+      - img "Succeeded":
+        - generic: 
+  - treeitem "Avatar of atlantis/apply 0/0 projects applied successfully. Succeeded":
+    - img "Avatar of"
+    - generic: atlantis/apply
+    - generic: 0/0 projects applied successfully.
+    - img "Succeeded":
+      - generic: 
+  - treeitem "Avatar of atlantis/plan 0/0 projects planned successfully. Succeeded":
+    - img "Avatar of"
+    - generic: atlantis/plan
+    - generic: 0/0 projects planned successfully.
+    - img "Succeeded":
+      - generic: 
+  - treeitem "Avatar of atlantis/policy_check 0/0 projects policies checked successfully. Succeeded":
+    - img "Avatar of"
+    - generic: atlantis/policy_check
+    - generic: 0/0 projects policies checked successfully.
+    - img "Succeeded":
+      - generic: 
+  - 'treeitem "Avatar of backend-checks 1 validation context(s): success Succeeded"':
+    - img "Avatar of"
+    - generic: backend-checks
+    - generic: "1 validation context(s): success"
+    - img "Succeeded":
+      - generic: 
+  - 'treeitem "Avatar of core-tests 1 validation context(s): success Succeeded"':
+    - img "Avatar of"
+    - generic: core-tests
+    - generic: "1 validation context(s): success"
+    - img "Succeeded":
+      - generic: 
+  - 'treeitem "Avatar of pre-merge-tests 1 validation context(s): success Succeeded"':
+    - img "Avatar of"
+    - generic: pre-merge-tests
+    - generic: "1 validation context(s): success"
+    - img "Succeeded":
+      - generic: 
+  - 'treeitem "Avatar of pytest 1 validation context(s): success Succeeded"':
+    - img "Avatar of"
+    - generic: pytest
+    - generic: "1 validation context(s): success"
+    - img "Succeeded":
+      - generic: 
+  - 'treeitem "Avatar of services-pytest 1 validation context(s): success Succeeded"':
+    - img "Avatar of"
+    - generic: services-pytest
+    - generic: "1 validation context(s): success"
+    - img "Succeeded":
+      - generic: 
+- alert
+- generic: Write your review
+- button "Skip to code":
+  - generic: Skip to code

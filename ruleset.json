@@ -1,0 +1,17 @@
+{
+  "name": "Require frontend and backend once",
+  "target": "branch",
+  "enforcement": "active",
+  "conditions": {"ref_name": {"include": ["refs/heads/dev"], "exclude": []}},
+  "rules": [{
+    "type": "required_status_checks",
+    "parameters": {
+      "strict_required_status_checks_policy": false,
+      "do_not_enforce_on_create": false,
+      "required_status_checks": [
+        {"context": "frontend-checks", "integration_id": 15368},
+        {"context": "backend-checks", "integration_id": 15368}
+      ]
+    }
+  }]
+}

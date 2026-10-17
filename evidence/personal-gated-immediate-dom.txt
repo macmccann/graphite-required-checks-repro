@@ -1,0 +1,267 @@
+2026-10-17T12:42:19.749Z
+- navigation:
+  - link "Home":
+    - /url: /
+  - link "Skip to main content":
+    - /url: "#content"
+  - separator
+  - link "PR inbox G then I":
+    - /url: /
+    - text: PR inbox
+    - generic: G
+    - generic: then
+    - generic: I
+    - generic: "1"
+  - link "Agents":
+    - /url: /agents
+    - generic: Agents
+  - link "Merge Queue G then M":
+    - /url: /merges
+    - text: Merge Queue
+    - generic: G
+    - generic: then
+    - generic: M
+  - link "Insights G then T":
+    - /url: /insights
+    - text: Insights
+    - generic: G
+    - generic: then
+    - generic: T
+  - link "AI Reviews G then R":
+    - /url: /ai-reviews
+    - text: AI Reviews
+    - generic: G
+    - generic: then
+    - generic: R
+  - separator
+  - button:
+  - button:
+  - separator
+  - button:
+  - button:
+  - link "Settings G then S":
+    - /url: /settings
+    - text: Settings
+    - generic: G
+    - generic: then
+    - generic: S
+  - button "Mac McCann":
+    - generic "Mac McCann":
+      - img "Mac McCann"
+- main:
+  - generic: "#3"
+  - text: "chore: add the stacked pull request for the check display repro"
+  - button:
+  - button "Review changes":
+    - generic: Review changes
+  - button "Not ready to merge" [disabled]:
+    - generic: Not ready to merge
+  - separator
+  - button "Open comments sidebar (0 unresolved threads)":
+    - generic: "0"
+  - button "Agent":
+    - generic: Agent
+  - button:
+  - generic: "graphite-required-checks-repro #3"
+  - 'button "chore: add the stacked pull request for the check display repro"'
+  - generic "Mac McCann":
+    - img "Mac McCann"
+  - generic: Mac McCann
+  - button "repro-top"
+  - generic: →
+  - button "Base branch repro-base, open actions": repro-base
+  - button "1 file +1":
+    - generic: 1 file
+    - generic: "+1"
+  - button "Updated now":
+    - text: Updated
+    - time: now
+  - button "Stack" [expanded]:
+    - generic: Stack
+  - text: 2 of 2
+  - button "Copy stack":
+    - generic: Copy stack
+  - button:
+  - 'link "Mac McCann #3 chore: add the stacked pull request for the check display repro Waiting on CI... <1m"':
+    - /url: /github/pr/macmccann/graphite-required-checks-repro/3/chore-add-the-stacked-pull-request-for-the-check-display-repro
+    - generic "Mac McCann":
+      - img "Mac McCann"
+    - generic: "#3"
+    - generic: "chore: add the stacked pull request for the check display repro"
+    - generic "Waiting on CI...":
+      - generic: Waiting on CI...
+    - time: <1m
+  - 'link "Mac McCann #2 chore: add the base pull request for the check display repro Ready to merge 1m"':
+    - /url: /github/pr/macmccann/graphite-required-checks-repro/2/chore-add-the-base-pull-request-for-the-check-display-repro
+    - generic "Mac McCann":
+      - img "Mac McCann"
+    - generic: "#2"
+    - generic: "chore: add the base pull request for the check display repro"
+    - generic "Ready to merge":
+      - generic: Ready to merge
+    - time: 1m
+  - generic: dev (trunk)
+  - button "Description" [expanded]:
+    - generic: Description
+  - button "Edit":
+    - generic: Edit
+  - paragraph: This is the child in a minimal reproduction of duplicate required checks in Graphite. Its only change is a one-line text file on top of the base PR.
+  - paragraph: Open this PR in Graphite and leave its Checks panel visible while amending and submitting the base branch. Capture the page within ten seconds of submission. The expected result is one row per required name, with GitHub Actions owning both names. Compare accumulated pending rows with GitHub's API and with the same page after a reload.
+  - paragraph: "Validation: live reproduction in progress; evidence will be committed to the default branch. Do not merge the reproduction stack."
+  - button "Discussion" [expanded]:
+    - generic: Discussion
+  - button:
+  - generic "Mac McCann":
+    - img "Mac McCann"
+  - text: Add discussion comment
+  - paragraph
+  - article:
+    - generic: open
+    - generic: Merge when ready
+  - article "Waiting on CI":
+    - heading "Waiting on CI" [level=2]
+    - generic: Required checks are running
+    - button "View checks":
+      - generic: View checks
+  - article:
+    - generic: Review with Graphite
+    - generic "Run AI review":
+      - button "Review":
+        - generic: Review
+  - button "Checks" [expanded]:
+    - generic: Checks
+  - button "Rerun all checks":
+  - button "View all":
+    - generic: View all
+  - list:
+    - generic: backend-checks
+    - img "Pending":
+      - generic: 
+    - generic: frontend-checks
+    - img "Pending":
+      - generic: 
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - link "prepare":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033581592/job/117398841889
+    - button:
+    - link:
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033581592/job/117398841889
+    - generic: 1s
+    - img "Pending":
+      - generic: 
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - link "Unrelated CI / unrelated-check":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033581703/job/117398842113?pr=3
+      - generic: Unrelated CI /
+      - text: unrelated-check
+    - button:
+    - generic: 1s
+    - img "Pending":
+      - generic: 
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - link "unrelated-check":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033581594/job/117398841695
+    - button:
+    - link:
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033581594/job/117398841695
+    - generic: 1s
+    - img "Pending":
+      - generic: 
+  - button "Reviewers" [expanded]:
+    - generic: Reviewers
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - generic: No reviewers
+  - button "Labels" [expanded]:
+    - generic: Labels
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - generic: No labels
+  - button "Assignees" [expanded]:
+    - generic: Assignees
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - text: No assignees ·
+  - button "Assign yourself"
+  - button "Hide sidebar":
+  - tablist:
+    - tab "Files" [selected]
+    - tab "Tour"
+  - button "v1":
+    - generic: v1
+    - generic: 
+  - button "Diff settings":
+    - generic: Diff settings
+  - separator
+  - textbox "Search files"
+  - button:
+  - tree "File tree":
+    - treeitem "fixture" [expanded]:
+      - generic: fixture
+      - treeitem "top.txt" [selected]:
+        - img "Added"
+        - link "top.txt +1":
+          - /url: "#file-fixture/top.txt"
+          - generic "fixture/top.txt": top.txt
+          - generic: "+1"
+  - button "Collapse top.txt":
+  - button "fixture/top.txt":
+    - generic: fixture/top.txt
+  - generic: "+1"
+  - button "txt"
+  - generic: Created
+  - checkbox "Viewed" [disabled]:
+    - generic: 
+    - generic: Viewed
+  - button "Add file comment to top.txt" [disabled]:
+  - button:
+  - generic: "1"
+  - generic: +
+  - generic: Top revision 1
+  - alert: You're viewing an outdated version.
+  - button "See latest":
+    - generic: See latest
+- separator
+- text:  
+- heading "Checks" [level=2]
+- button "Close sidebar":
+- button "Rerun all checks":
+  - generic: Rerun all jobs
+- link "View logs in GitHub":
+  - /url: https://github.com/macmccann/graphite-required-checks-repro/pull/3#partial-timeline
+  - generic: View logs in GitHub
+- tree "Checks":
+  - treeitem "backend-checks Pending":
+    - generic: backend-checks
+    - img "Pending":
+      - generic: 
+  - treeitem "frontend-checks Pending":
+    - generic: frontend-checks
+    - img "Pending":
+      - generic: 
+  - treeitem "GitHub Actions prepare Pending":
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - generic: prepare
+    - img "Pending":
+      - generic: 
+  - treeitem "GitHub Actions Unrelated CI / unrelated-check Pending":
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - generic: Unrelated CI /
+    - text: unrelated-check
+    - img "Pending":
+      - generic: 
+  - treeitem "GitHub Actions unrelated-check Pending":
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - generic: unrelated-check
+    - img "Pending":
+      - generic: 
+- alert
+- generic: Write your review
+- button "Skip to code":
+  - generic: Skip to code

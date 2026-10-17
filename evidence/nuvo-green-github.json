@@ -1,0 +1,99 @@
+{
+  "captured_at": "2026-10-17T12:43:37.231403+00:00",
+  "repo": "nuvo-tech/nuvo",
+  "pr": 26753,
+  "head_sha": "fd114941d1fb6ed28bc4bb75d7fa2007dd2e0ba6",
+  "base": "codex/graphite-required-checks-repro-base",
+  "mergeable_state": "clean",
+  "required_check_rules_on_dev": [
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "frontend-checks",
+            "integration_id": 15368
+          },
+          {
+            "context": "backend-checks",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "nuvo-tech/nuvo",
+      "ruleset_id": 38721
+    }
+  ],
+  "check_runs": [
+    {
+      "id": 117398346435,
+      "name": "frontend-checks",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-17T12:39:47Z",
+      "completed_at": "2026-10-17T12:39:50Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39033347239/job/117398346435",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    }
+  ],
+  "current_statuses": [
+    {
+      "id": 56592903759,
+      "context": "backend-checks",
+      "state": "success",
+      "updated_at": "2026-10-17T12:42:19Z",
+      "target_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39033347239"
+    }
+  ],
+  "status_history_counts": {
+    "backend-checks": 6
+  },
+  "status_history": [
+    {
+      "id": 56592903759,
+      "context": "backend-checks",
+      "state": "success",
+      "created_at": "2026-10-17T12:42:19Z",
+      "target_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39033347239"
+    },
+    {
+      "id": 56592866918,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T12:40:53Z",
+      "target_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39033347239"
+    },
+    {
+      "id": 56592844380,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T12:40:01Z",
+      "target_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39033347239"
+    },
+    {
+      "id": 56592839883,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T12:39:50Z",
+      "target_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39033347239"
+    },
+    {
+      "id": 56592823423,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T12:39:11Z",
+      "target_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39033347239"
+    },
+    {
+      "id": 56592818837,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T12:38:59Z",
+      "target_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39033347239"
+    }
+  ]
+}
