@@ -9,6 +9,7 @@ import subprocess
 parser = argparse.ArgumentParser()
 parser.add_argument('repo', help='owner/repository')
 parser.add_argument('pr', type=int)
+parser.add_argument('--all-checks', action='store_true', help='Include every check and status, not only required names')
 args = parser.parse_args()
 
 def api(path):
@@ -36,8 +37,8 @@ print(json.dumps({
     'repo': args.repo, 'pr': args.pr, 'head_sha': sha,
     'base': pr['base']['ref'], 'mergeable_state': pr['mergeable_state'],
     'required_check_rules_on_dev': [r for r in rules if r['type'] == 'required_status_checks'],
-    'check_runs': [{k: c[k] for k in ['id', 'name', 'status', 'conclusion', 'started_at', 'completed_at', 'html_url']} | {'app_id': c['app']['id'], 'app_slug': c['app']['slug']} for c in checks if c['name'] in names],
-    'current_statuses': [{k: s[k] for k in ['id', 'context', 'state', 'updated_at', 'target_url']} for s in combined if s['context'] in names],
-    'status_history_counts': dict(collections.Counter(s['context'] for s in statuses if s['context'] in names)),
-    'status_history': [{k: s[k] for k in ['id', 'context', 'state', 'created_at', 'target_url']} for s in statuses if s['context'] in names],
+    'check_runs': [{k: c[k] for k in ['id', 'name', 'status', 'conclusion', 'started_at', 'completed_at', 'html_url']} | {'app_id': c['app']['id'], 'app_slug': c['app']['slug']} for c in checks if args.all_checks or c['name'] in names],
+    'current_statuses': [{k: s[k] for k in ['id', 'context', 'state', 'updated_at', 'target_url']} for s in combined if args.all_checks or s['context'] in names],
+    'status_history_counts': dict(collections.Counter(s['context'] for s in statuses if args.all_checks or s['context'] in names)),
+    'status_history': [{k: s[k] for k in ['id', 'context', 'state', 'created_at', 'target_url']} for s in statuses if args.all_checks or s['context'] in names],
 }, indent=2))

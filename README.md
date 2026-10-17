@@ -4,6 +4,10 @@
 
 This repository is the public bug-report bundle. The verified reproduction uses two text-only PRs in Nuvo; no application or workflow changes are needed. Small standalone controls in this personal repository did **not** reproduce the same multiplication. They are documented as controls, not represented as a confirmed independent reproducer.
 
+## Reporter hypothesis tested
+
+The personal repository now runs slow synthetic CI with the full Nuvo reporter logic. Its on/off/on controls did not reproduce the duplicate rows. More decisively, **Nuvo still showed four copies of each required check with reporter publishing disabled**, at +5.758 seconds after submission, while GitHub recorded none of our reporter’s statuses on that head. This rules out those status writes as a necessary trigger; Graphite’s exact internal cause remains unproven. Both stacks have reporting restored. See the [experiment, screenshots, and repeatable controls](controls/slow-reporter.md).
+
 ## Captured result
 
 The screenshot below was taken **2.889 seconds after `gt submit` finished**. Each required name appears three times as a plain pending row.

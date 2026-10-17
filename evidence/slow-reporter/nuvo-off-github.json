@@ -1,0 +1,602 @@
+{
+  "captured_at": "2026-10-17T13:32:05.497914+00:00",
+  "repo": "nuvo-tech/nuvo",
+  "pr": 26753,
+  "head_sha": "f3bfd6a270810c42ab366f3df75b591b5c2f150d",
+  "base": "codex/graphite-required-checks-repro-base",
+  "mergeable_state": "unstable",
+  "required_check_rules_on_dev": [
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "frontend-checks",
+            "integration_id": 15368
+          },
+          {
+            "context": "backend-checks",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "nuvo-tech/nuvo",
+      "ruleset_id": 38721
+    }
+  ],
+  "check_runs": [
+    {
+      "id": 117408611823,
+      "name": "Publish trusted test image",
+      "status": "completed",
+      "conclusion": "skipped",
+      "started_at": "2026-10-17T13:32:00Z",
+      "completed_at": "2026-10-17T13:32:00Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930417/job/117408611823",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408611288,
+      "name": "services-pytest (${{ matrix.service }})",
+      "status": "completed",
+      "conclusion": "skipped",
+      "started_at": "2026-10-17T13:32:00Z",
+      "completed_at": "2026-10-17T13:32:00Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930417/job/117408611288",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408610468,
+      "name": "Select Momentic tests",
+      "status": "queued",
+      "conclusion": null,
+      "started_at": "2026-10-17T13:32:00Z",
+      "completed_at": null,
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930417/job/117408610468",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408610381,
+      "name": "build",
+      "status": "queued",
+      "conclusion": null,
+      "started_at": "2026-10-17T13:32:00Z",
+      "completed_at": null,
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930417/job/117408610381",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408571593,
+      "name": "detect-changes",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-17T13:31:54Z",
+      "completed_at": null,
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930399/job/117408571593",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408571581,
+      "name": "codegen-check",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-17T13:31:54Z",
+      "completed_at": null,
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930399/job/117408571581",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408571580,
+      "name": "pending-updates-puppeteer / Select core browser tests",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-17T13:31:50Z",
+      "completed_at": null,
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930399/job/117408571580",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408571550,
+      "name": "agent-guidance",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-17T13:31:53Z",
+      "completed_at": "2026-10-17T13:32:01Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930399/job/117408571550",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408571475,
+      "name": "ci-revision",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-17T13:31:50Z",
+      "completed_at": "2026-10-17T13:31:53Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930399/job/117408571475",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408556007,
+      "name": "detect-changes",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-17T13:31:48Z",
+      "completed_at": "2026-10-17T13:31:59Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930417/job/117408556007",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408555848,
+      "name": "ci-revision",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-17T13:31:46Z",
+      "completed_at": "2026-10-17T13:31:50Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930417/job/117408555848",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408555793,
+      "name": "Triage Momentic failures",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408555793",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408555533,
+      "name": "nightly-test-health",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408555533",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408555467,
+      "name": "core-tests (shard-${{ matrix.shard-index }})",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408555467",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408555414,
+      "name": "testmon-shadow-summary",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408555414",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408555191,
+      "name": "pytest (shard-${{ matrix.shard-index }})",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408555191",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408555145,
+      "name": "Merge and triage Momentic results",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408555145",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408555143,
+      "name": "Select Momentic tests",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408555143",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554974,
+      "name": "services-pytest (${{ matrix.service }})",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408554974",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554962,
+      "name": "Publish trusted test image",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408554962",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554925,
+      "name": "Build Momentic frontend",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408554925",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554817,
+      "name": "backend-guardrails",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:44Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554817",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554721,
+      "name": "helm-chart-tests",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554721",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554703,
+      "name": "pytest-select",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408554703",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554673,
+      "name": "build",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408554673",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554636,
+      "name": "frontend-validation",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554636",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554476,
+      "name": "edge-router-checks",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554476",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554440,
+      "name": "backend-ad-guardrails",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554440",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554402,
+      "name": "backend-typecheck",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554402",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554348,
+      "name": "event-router-checks",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554348",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554344,
+      "name": "shipsmith-checks",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554344",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554264,
+      "name": "dbt-checks",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554264",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554126,
+      "name": "graphql-compatibility",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554126",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408554065,
+      "name": "pending-updates-puppeteer / Browser ${{ matrix.section }}",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408554065",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408553747,
+      "name": "frontend-checks",
+      "status": "completed",
+      "conclusion": "failure",
+      "started_at": "2026-10-17T13:31:45Z",
+      "completed_at": "2026-10-17T13:31:48Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408553747",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408552558,
+      "name": "auto-merge",
+      "status": "completed",
+      "conclusion": "skipped",
+      "started_at": "2026-10-17T13:31:43Z",
+      "completed_at": "2026-10-17T13:31:42Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930354/job/117408552558",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408551581,
+      "name": "auto-merge",
+      "status": "completed",
+      "conclusion": "skipped",
+      "started_at": "2026-10-17T13:31:42Z",
+      "completed_at": "2026-10-17T13:31:42Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930177/job/117408551581",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408551389,
+      "name": "codegen-check",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:42Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408551389",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408551354,
+      "name": "pending-updates-puppeteer / Select core browser tests",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:42Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408551354",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408551335,
+      "name": "agent-guidance",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:42Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408551335",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408551307,
+      "name": "detect-changes",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:42Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408551307",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408551088,
+      "name": "ci-revision",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:42Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408551088",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408551079,
+      "name": "ci-revision",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:42Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930236/job/117408551079",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408550910,
+      "name": "detect-changes",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T13:31:42Z",
+      "completed_at": "2026-10-17T13:31:43Z",
+      "html_url": "https://github.com/nuvo-tech/nuvo/actions/runs/39036930178/job/117408550910",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    }
+  ],
+  "current_statuses": [
+    {
+      "id": 56594224613,
+      "context": "atlantis/plan",
+      "state": "success",
+      "updated_at": "2026-10-17T13:31:42Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594225033,
+      "context": "atlantis/policy_check",
+      "state": "success",
+      "updated_at": "2026-10-17T13:31:43Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594225461,
+      "context": "atlantis/apply",
+      "state": "success",
+      "updated_at": "2026-10-17T13:31:44Z",
+      "target_url": ""
+    }
+  ],
+  "status_history_counts": {
+    "atlantis/apply": 2,
+    "atlantis/policy_check": 2,
+    "atlantis/plan": 4
+  },
+  "status_history": [
+    {
+      "id": 56594225461,
+      "context": "atlantis/apply",
+      "state": "success",
+      "created_at": "2026-10-17T13:31:44Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594225271,
+      "context": "atlantis/apply",
+      "state": "success",
+      "created_at": "2026-10-17T13:31:43Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594225033,
+      "context": "atlantis/policy_check",
+      "state": "success",
+      "created_at": "2026-10-17T13:31:43Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594224702,
+      "context": "atlantis/policy_check",
+      "state": "success",
+      "created_at": "2026-10-17T13:31:42Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594224613,
+      "context": "atlantis/plan",
+      "state": "success",
+      "created_at": "2026-10-17T13:31:42Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594224258,
+      "context": "atlantis/plan",
+      "state": "success",
+      "created_at": "2026-10-17T13:31:41Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594224146,
+      "context": "atlantis/plan",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:41Z",
+      "target_url": ""
+    },
+    {
+      "id": 56594223687,
+      "context": "atlantis/plan",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:40Z",
+      "target_url": ""
+    }
+  ]
+}

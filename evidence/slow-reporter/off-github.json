@@ -1,0 +1,34 @@
+{
+  "captured_at": "2026-10-17T13:30:48.511768+00:00",
+  "repo": "macmccann/graphite-required-checks-repro",
+  "pr": 7,
+  "head_sha": "62f11fd2930be99e01b7ac1188fbd37081513f83",
+  "base": "slow-repro-base",
+  "mergeable_state": "clean",
+  "required_check_rules_on_dev": [
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "frontend-checks",
+            "integration_id": 15368
+          },
+          {
+            "context": "backend-checks",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "macmccann/graphite-required-checks-repro",
+      "ruleset_id": 25302452
+    }
+  ],
+  "check_runs": [],
+  "current_statuses": [],
+  "status_history_counts": {},
+  "status_history": []
+}
