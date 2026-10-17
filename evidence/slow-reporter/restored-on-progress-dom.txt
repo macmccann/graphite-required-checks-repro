@@ -1,0 +1,337 @@
+- navigation:
+  - link "Home":
+    - /url: /
+  - link "Skip to main content":
+    - /url: "#content"
+  - separator
+  - link "PR inbox G then I":
+    - /url: /
+    - text: PR inbox
+    - generic: G
+    - generic: then
+    - generic: I
+    - generic: "1"
+  - link "Agents":
+    - /url: /agents
+    - generic: Agents
+  - link "Merge Queue G then M":
+    - /url: /merges
+    - text: Merge Queue
+    - generic: G
+    - generic: then
+    - generic: M
+  - link "Insights G then T":
+    - /url: /insights
+    - text: Insights
+    - generic: G
+    - generic: then
+    - generic: T
+  - link "AI Reviews G then R":
+    - /url: /ai-reviews
+    - text: AI Reviews
+    - generic: G
+    - generic: then
+    - generic: R
+  - separator
+  - button:
+  - button:
+  - separator
+  - button:
+  - button:
+  - link "Settings G then S":
+    - /url: /settings
+    - text: Settings
+    - generic: G
+    - generic: then
+    - generic: S
+  - button "Mac McCann":
+    - generic "Mac McCann":
+      - img "Mac McCann"
+- main:
+  - generic: "#7"
+  - text: "chore: exercise slow CI on a stacked child pull request"
+  - button:
+  - button "Review changes":
+    - generic: Review changes
+  - button "Not ready to merge" [disabled]:
+    - generic: Not ready to merge
+  - separator
+  - button "Open comments sidebar (0 unresolved threads)":
+    - generic: "0"
+  - button "Agent":
+    - generic: Agent
+  - button:
+  - generic: "graphite-required-checks-repro #7"
+  - 'button "chore: exercise slow CI on a stacked child pull request"'
+  - generic "Mac McCann":
+    - img "Mac McCann"
+  - generic: Mac McCann
+  - button "slow-repro-top"
+  - generic: →
+  - button "Base branch slow-repro-base, open actions": slow-repro-base
+  - button "1 file +1":
+    - generic: 1 file
+    - generic: "+1"
+  - button "Updated 2m ago":
+    - text: Updated
+    - time: 2m ago
+  - button "Stack" [expanded]:
+    - generic: Stack
+  - text: 2 of 2
+  - button "Copy stack":
+    - generic: Copy stack
+  - button:
+  - 'link "Mac McCann #7 chore: exercise slow CI on a stacked child pull request Waiting on CI... 2m"':
+    - /url: /github/pr/macmccann/graphite-required-checks-repro/7/chore-exercise-slow-CI-on-a-stacked-child-pull-request
+    - generic "Mac McCann":
+      - img "Mac McCann"
+    - generic: "#7"
+    - generic: "chore: exercise slow CI on a stacked child pull request"
+    - generic "Waiting on CI...":
+      - generic: Waiting on CI...
+    - time: 2m
+  - 'link "Mac McCann #6 chore: exercise slow CI on the base pull request Waiting on CI... 2m"':
+    - /url: /github/pr/macmccann/graphite-required-checks-repro/6/chore-exercise-slow-CI-on-the-base-pull-request
+    - generic "Mac McCann":
+      - img "Mac McCann"
+    - generic: "#6"
+    - generic: "chore: exercise slow CI on the base pull request"
+    - generic "Waiting on CI...":
+      - generic: Waiting on CI...
+    - time: 2m
+  - generic: dev (trunk)
+  - button "Description" [expanded]:
+    - generic: Description
+  - button "Edit":
+    - generic: Edit
+  - paragraph: This is the child pull request in a two-PR experiment for Graphite’s duplicate pending required-check rows. It adds only a text fixture and uses the slow synthetic workflows and Nuvo status-reporter logic installed on this repository’s default branch.
+  - paragraph: We will amend the base and restack the child while CI is running, capture Graphite within ten seconds of submission, and compare reporter-enabled and reporter-disabled runs. The reporter-disabled control removes only the producer opt-in markers, intentionally leaving backend status unsatisfied. The final state will restore reporting.
+  - paragraph:
+    - text: "Validation: the infrastructure’s required checks passed before merging; 80 applicable reporter tests passed locally. Live experiment results will be recorded in"
+    - code: controls/slow-reporter.md
+    - text: . Do not merge this experimental stack. No application changes or migrations.
+  - button "Discussion" [expanded]:
+    - generic: Discussion
+  - button:
+  - generic "Mac McCann":
+    - img "Mac McCann"
+  - text: Add discussion comment
+  - paragraph
+  - article:
+    - generic: open
+    - generic: Merge when ready
+  - article "Waiting on CI":
+    - heading "Waiting on CI" [level=2]
+    - generic: Required checks are running
+    - button "View checks":
+      - generic: View checks
+  - article:
+    - generic: Review with Graphite
+    - generic "Run AI review":
+      - button "Review":
+        - generic: Review
+  - button "Checks" [expanded]:
+    - generic: Checks
+  - button "Rerun all checks":
+  - button "View all":
+    - generic: View all
+  - list:
+    - img "Avatar of"
+    - link "backend-checks":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901035
+    - generic: "1 validation context(s): pending"
+    - link:
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901035
+    - img "Pending":
+      - generic: 
+    - img "Avatar of"
+    - link "core-tests":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086
+    - generic: "1 validation context(s): pending"
+    - link:
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086
+    - img "Pending":
+      - generic: 
+    - img "Avatar of"
+    - link "pre-merge-tests":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086
+    - generic: "1 validation context(s): pending"
+    - link:
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086
+    - img "Pending":
+      - generic: 
+    - img "Avatar of"
+    - link "pytest":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086
+    - generic: "1 validation context(s): pending"
+    - link:
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086
+    - img "Pending":
+      - generic: 
+    - img "Avatar of"
+    - link "services-pytest":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086
+    - generic: "1 validation context(s): pending"
+    - link:
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086
+    - img "Pending":
+      - generic: 
+    - generic: frontend-checks
+    - img "Pending":
+      - generic: 
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - link "Repro Tests / build":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086/job/117408816826?pr=7
+      - generic: Repro Tests /
+      - text: build
+    - button:
+    - generic: 12s
+    - img "Pending":
+      - generic: 
+    - generic "GitHub Actions":
+      - img "GitHub Actions"
+    - link "Repro CI / detect-changes":
+      - /url: https://github.com/macmccann/graphite-required-checks-repro/runs/117408575026?pr=7
+      - generic: Repro CI /
+      - text: detect-changes
+    - button:
+    - generic: 1m 24s
+    - progressbar "In progress":
+      - text: x
+  - button "Reviewers" [expanded]:
+    - generic: Reviewers
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - generic: No reviewers
+  - button "Labels" [expanded]:
+    - generic: Labels
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - generic: No labels
+  - button "Assignees" [expanded]:
+    - generic: Assignees
+  - combobox:
+  - button "Pull from parent" [disabled]:
+  - text: No assignees ·
+  - button "Assign yourself"
+  - button "Hide sidebar":
+  - tablist:
+    - tab "Files" [selected]
+    - tab "Tour"
+  - button "v1":
+    - generic: v1
+    - generic: 
+  - button "Diff settings":
+    - generic: Diff settings
+  - separator
+  - textbox "Search files"
+  - button:
+  - tree "File tree":
+    - treeitem "fixture" [expanded]:
+      - generic: fixture
+      - treeitem "slow-top.txt":
+        - img "Added"
+        - link "slow-top.txt +1":
+          - /url: "#file-fixture/slow-top.txt"
+          - generic "fixture/slow-top.txt": slow-top.txt
+          - generic: "+1"
+  - button "Collapse slow-top.txt":
+  - button "fixture/slow-top.txt":
+    - generic: fixture/slow-top.txt
+  - generic: "+1"
+  - button "txt"
+  - generic: Created
+  - checkbox "Viewed" [disabled]:
+    - generic: 
+    - generic: Viewed
+  - button "Add file comment to slow-top.txt" [disabled]:
+  - button:
+  - generic: "1"
+  - generic: +
+  - generic: "Slow reporter experiment: child revision 1"
+  - alert: You're viewing an outdated version.
+  - button "See latest":
+    - generic: See latest
+- separator
+- text:  
+- heading "Checks" [level=2]
+- button "Close sidebar":
+- button "Rerun all checks":
+  - generic: Rerun all jobs
+- link "View logs in GitHub":
+  - /url: https://github.com/macmccann/graphite-required-checks-repro/pull/7#partial-timeline
+  - generic: View logs in GitHub
+- tree "Checks":
+  - 'treeitem "Avatar of backend-checks 1 validation context(s): pending Pending"':
+    - img "Avatar of"
+    - generic: backend-checks
+    - generic: "1 validation context(s): pending"
+    - img "Pending":
+      - generic: 
+  - 'treeitem "Avatar of core-tests 1 validation context(s): pending Pending"':
+    - img "Avatar of"
+    - generic: core-tests
+    - generic: "1 validation context(s): pending"
+    - img "Pending":
+      - generic: 
+  - 'treeitem "Avatar of pre-merge-tests 1 validation context(s): pending Pending"':
+    - img "Avatar of"
+    - generic: pre-merge-tests
+    - generic: "1 validation context(s): pending"
+    - img "Pending":
+      - generic: 
+  - 'treeitem "Avatar of pytest 1 validation context(s): pending Pending"':
+    - img "Avatar of"
+    - generic: pytest
+    - generic: "1 validation context(s): pending"
+    - img "Pending":
+      - generic: 
+  - 'treeitem "Avatar of services-pytest 1 validation context(s): pending Pending"':
+    - img "Avatar of"
+    - generic: services-pytest
+    - generic: "1 validation context(s): pending"
+    - img "Pending":
+      - generic: 
+  - treeitem "frontend-checks Pending":
+    - generic: frontend-checks
+    - img "Pending":
+      - generic: 
+  - treeitem "Repro Tests" [expanded]:
+    - generic: Repro Tests
+    - treeitem "GitHub Actions build Pending":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: build
+      - img "Pending":
+        - generic: 
+    - treeitem "GitHub Actions ci-revision Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: ci-revision
+      - img "Succeeded":
+        - generic: 
+    - treeitem "GitHub Actions detect-changes Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: detect-changes
+      - img "Succeeded":
+        - generic: 
+  - treeitem "Repro CI" [expanded]:
+    - generic: Repro CI
+    - treeitem "GitHub Actions detect-changes indeterminate progress":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: detect-changes
+      - progressbar "In progress":
+        - text: x
+    - treeitem "GitHub Actions ci-revision Succeeded":
+      - generic "GitHub Actions":
+        - img "GitHub Actions"
+      - generic: ci-revision
+      - img "Succeeded":
+        - generic: 
+- alert
+- generic: Write your review
+- button "Skip to code":
+  - generic: Skip to code

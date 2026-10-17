@@ -1,0 +1,238 @@
+{
+  "captured_at": "2026-10-17T13:33:10.052440+00:00",
+  "repo": "macmccann/graphite-required-checks-repro",
+  "pr": 7,
+  "head_sha": "89448b7bac031731a18b7779560d9077787531dc",
+  "base": "slow-repro-base",
+  "mergeable_state": "unstable",
+  "required_check_rules_on_dev": [
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "frontend-checks",
+            "integration_id": 15368
+          },
+          {
+            "context": "backend-checks",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "macmccann/graphite-required-checks-repro",
+      "ruleset_id": 25302452
+    }
+  ],
+  "check_runs": [
+    {
+      "id": 117408816826,
+      "name": "build",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-17T13:33:05Z",
+      "completed_at": null,
+      "html_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086/job/117408816826",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408605674,
+      "name": "detect-changes",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-17T13:32:00Z",
+      "completed_at": "2026-10-17T13:33:03Z",
+      "html_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086/job/117408605674",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408605421,
+      "name": "ci-revision",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-17T13:32:00Z",
+      "completed_at": "2026-10-17T13:32:03Z",
+      "html_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086/job/117408605421",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408575026,
+      "name": "detect-changes",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-17T13:31:51Z",
+      "completed_at": null,
+      "html_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901035/job/117408575026",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117408574788,
+      "name": "ci-revision",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-17T13:31:51Z",
+      "completed_at": "2026-10-17T13:31:55Z",
+      "html_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901035/job/117408574788",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    }
+  ],
+  "current_statuses": [
+    {
+      "id": 56594235999,
+      "context": "backend-checks",
+      "state": "pending",
+      "updated_at": "2026-10-17T13:32:07Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901035"
+    },
+    {
+      "id": 56594238154,
+      "context": "pytest",
+      "state": "pending",
+      "updated_at": "2026-10-17T13:32:11Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594238829,
+      "context": "services-pytest",
+      "state": "pending",
+      "updated_at": "2026-10-17T13:32:13Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594239567,
+      "context": "core-tests",
+      "state": "pending",
+      "updated_at": "2026-10-17T13:32:14Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594240369,
+      "context": "pre-merge-tests",
+      "state": "pending",
+      "updated_at": "2026-10-17T13:32:16Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    }
+  ],
+  "status_history_counts": {
+    "pre-merge-tests": 3,
+    "core-tests": 3,
+    "services-pytest": 3,
+    "pytest": 3,
+    "backend-checks": 3
+  },
+  "status_history": [
+    {
+      "id": 56594240369,
+      "context": "pre-merge-tests",
+      "state": "pending",
+      "created_at": "2026-10-17T13:32:16Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594239567,
+      "context": "core-tests",
+      "state": "pending",
+      "created_at": "2026-10-17T13:32:14Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594238829,
+      "context": "services-pytest",
+      "state": "pending",
+      "created_at": "2026-10-17T13:32:13Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594238154,
+      "context": "pytest",
+      "state": "pending",
+      "created_at": "2026-10-17T13:32:11Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594235999,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T13:32:07Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901035"
+    },
+    {
+      "id": 56594226645,
+      "context": "pre-merge-tests",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:46Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594225862,
+      "context": "core-tests",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:45Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594225142,
+      "context": "services-pytest",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:43Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594224402,
+      "context": "pytest",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:41Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594222250,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:37Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901035"
+    },
+    {
+      "id": 56594219755,
+      "context": "pre-merge-tests",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:31Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594218979,
+      "context": "core-tests",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:30Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594218193,
+      "context": "services-pytest",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:28Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    },
+    {
+      "id": 56594217592,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:27Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901035"
+    },
+    {
+      "id": 56594217313,
+      "context": "pytest",
+      "state": "pending",
+      "created_at": "2026-10-17T13:31:26Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39036901086"
+    }
+  ]
+}
