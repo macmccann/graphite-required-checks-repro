@@ -1,0 +1,96 @@
+{
+  "captured_at": "2026-10-17T12:40:59.285045+00:00",
+  "repo": "macmccann/graphite-required-checks-repro",
+  "pr": 3,
+  "head_sha": "8879865ffd3885dcaa0e73ace7ba90f9af95e1ca",
+  "base": "repro-base",
+  "mergeable_state": "unstable",
+  "required_check_rules_on_dev": [
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "frontend-checks",
+            "integration_id": 15368
+          },
+          {
+            "context": "backend-checks",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "macmccann/graphite-required-checks-repro",
+      "ruleset_id": 25302452
+    }
+  ],
+  "check_runs": [
+    {
+      "id": 117398549120,
+      "name": "frontend-checks",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-17T12:40:48Z",
+      "completed_at": null,
+      "html_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033478246/job/117398549120",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    },
+    {
+      "id": 117398545464,
+      "name": "frontend-checks",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-17T12:40:45Z",
+      "completed_at": "2026-10-17T12:40:45Z",
+      "html_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033477973/job/117398545464",
+      "app_id": 15368,
+      "app_slug": "github-actions"
+    }
+  ],
+  "current_statuses": [
+    {
+      "id": 56592866442,
+      "context": "backend-checks",
+      "state": "failure",
+      "updated_at": "2026-10-17T12:40:52Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033477973"
+    }
+  ],
+  "status_history_counts": {
+    "backend-checks": 4
+  },
+  "status_history": [
+    {
+      "id": 56592866442,
+      "context": "backend-checks",
+      "state": "failure",
+      "created_at": "2026-10-17T12:40:52Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033477973"
+    },
+    {
+      "id": 56592866053,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T12:40:51Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033477973"
+    },
+    {
+      "id": 56592865778,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T12:40:51Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033477973"
+    },
+    {
+      "id": 56592865216,
+      "context": "backend-checks",
+      "state": "pending",
+      "created_at": "2026-10-17T12:40:50Z",
+      "target_url": "https://github.com/macmccann/graphite-required-checks-repro/actions/runs/39033478246"
+    }
+  ]
+}
