@@ -1,0 +1,4 @@
+Slow reporter experiment: base revision 1
+2026-10-17T13:29:06.706778+00:00 reporter=on
+2026-10-17T13:30:14.511409+00:00 reporter=off
+2026-10-17T13:31:06.801551+00:00 reporter=on
